@@ -4,4 +4,4 @@ const windsorlodge = () => {
   return <div>windsor-lodge</div>;
 };
 
-export default windsor - lodge;
+export default windsorlodge;
