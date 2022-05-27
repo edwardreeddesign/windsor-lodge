@@ -17,7 +17,7 @@ module.exports = {
       "canadianhorseracinghalloffame.s3.amazonaws.com",
     ],
   },
-  experimental: {
+  compiler: {
     // Enables the styled-components SWC transform
     styledComponents: true,
   },

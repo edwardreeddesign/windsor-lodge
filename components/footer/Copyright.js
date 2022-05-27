@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styled from "styled-components";
-import { P } from "../elements/Typography";
+import { P } from "../../elements/Typography";
 
 const Copyright = () => {
   return (
@@ -26,7 +26,8 @@ const StyledCopyright = styled.div`
   justify-content: center;
   font-family: cursive;
 
-  a {
+  a,
+  P {
     font-family: cursive;
   }
 `;
