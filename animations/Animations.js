@@ -102,3 +102,12 @@ export const slideLeft = {
     transition: { type: "spring", duration: 1.75 },
   },
 };
+
+export const textFadeIn = {
+  hidden: { opacity: 0, scale: 0.2 },
+  show: {
+    opacity: 1,
+    scale: 1,
+    transition: { type: "tween" },
+  },
+};

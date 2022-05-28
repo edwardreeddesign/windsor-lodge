@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { pageAnimation } from "../animations/Animations";
 import Banner from "../components/home/Banner";
 import Lodge from "../components/home/Lodge";
+import Meeting from "../components/home/Meeting";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
       <Hero />
       <Banner />
       <Lodge />
+      <Meeting />
     </motion.div>
   );
 }
