@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
     a {
         text-decoration: none;
         text-align: center;
-        color: ${({ theme }) => theme.colors.dark2};
+        color: inherit;
         font-weight: 600;
         font-family: ${({ theme }) => theme.fonts.title};
     }

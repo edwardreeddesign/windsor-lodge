@@ -47,7 +47,7 @@ const StyledButton = styled(motion.button)`
     props.primary
       ? props.theme.colors.main1
       : props.secondary
-      ? props.theme.colors.main2
+      ? props.theme.colors.dark1
       : props.outline
       ? "transparent"
       : ""};
@@ -55,7 +55,7 @@ const StyledButton = styled(motion.button)`
     props.primary
       ? props.theme.colors.dark1
       : props.secondary
-      ? props.theme.colors.light1
+      ? props.theme.colors.light2
       : props.outline
       ? props.theme.colors.main1
       : ""};
@@ -65,7 +65,7 @@ const StyledButton = styled(motion.button)`
       props.primary
         ? props.theme.colors.main2
         : props.secondary
-        ? props.theme.colors.light2
+        ? props.theme.colors.dark2
         : props.outline
         ? "transparent"
         : ""};

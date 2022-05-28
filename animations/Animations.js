@@ -54,5 +54,51 @@ export const buttonFadeIn = {
 export const scrollReveal = {
   hidden: { opacity: 0, scale: 1, y: "5rem" },
   show: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.5 } },
-  transition: { type: "tween" },
+  transition: {
+    type: "spring",
+    duration: 0.5,
+    when: "beforeChildren",
+    staggerChildren: 0.3,
+  },
+};
+
+export const photoIn = {
+  hidden: { opacity: 0, x: "5rem" },
+  show: {
+    opacity: 1,
+    scale: 1,
+    x: 0,
+    transition: { duration: 0.85, type: "tween" },
+  },
+};
+
+export const titleReveal = {
+  hidden: {
+    y: "4rem",
+    opacity: 0,
+  },
+  show: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.85,
+      type: "tween",
+
+      staggerChildren: 0.25,
+    },
+  },
+};
+
+export const slideLeft = {
+  hidden: {
+    opacity: 0,
+    x: "-15rem",
+    scale: 0.25,
+  },
+  show: {
+    opacity: 1,
+    x: 0,
+    scale: 1,
+    transition: { type: "spring", duration: 1.75 },
+  },
 };

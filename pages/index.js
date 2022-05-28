@@ -4,6 +4,7 @@ import Hero from "../components/home/Hero";
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animations/Animations";
 import Banner from "../components/home/Banner";
+import Lodge from "../components/home/Lodge";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
 
       <Hero />
       <Banner />
+      <Lodge />
     </motion.div>
   );
 }
