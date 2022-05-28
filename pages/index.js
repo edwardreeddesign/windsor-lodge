@@ -1,9 +1,18 @@
 import Head from "next/head";
 import Hero from "../components/home/Hero";
+// animations
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animations/Animations";
+import Banner from "../components/home/Banner";
 
 export default function Home() {
   return (
-    <div>
+    <motion.div
+      variants={pageAnimation}
+      initial='hidden'
+      animate='show'
+      exit='exit'
+    >
       <Head>
         <title>Windsor Lodge 403 | Home</title>
         <meta name='description' content='Windsor Lodge 403 home page' />
@@ -18,6 +27,7 @@ export default function Home() {
       </Head>
 
       <Hero />
-    </div>
+      <Banner />
+    </motion.div>
   );
 }
