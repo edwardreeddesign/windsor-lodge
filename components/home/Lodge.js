@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import {
   photoIn,
   scrollReveal,
-  titleReveal,
   buttonFadeIn,
   slideLeft,
 } from "../../animations/Animations";

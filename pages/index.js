@@ -6,6 +6,7 @@ import { pageAnimation } from "../animations/Animations";
 import Banner from "../components/home/Banner";
 import Lodge from "../components/home/Lodge";
 import Meeting from "../components/home/Meeting";
+import Quotes from "../components/home/Quotes";
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
       <Banner />
       <Lodge />
       <Meeting />
+      <Quotes />
     </motion.div>
   );
 }
