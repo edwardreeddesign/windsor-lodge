@@ -7,6 +7,7 @@ import { pageAnimation } from "../animations/Animations";
 //Styles
 import styled from "styled-components";
 import WhatDoesItDo from "../components/freemasonry/WhatDoesItDo";
+import FamousMasons from "../components/freemasonry/FamousMasons";
 
 const freemasonry = () => {
   return (
@@ -33,6 +34,7 @@ const freemasonry = () => {
       </Head>
       <Hero />
       <WhatDoesItDo />
+      <FamousMasons />
     </PageWrapper>
   );
 };

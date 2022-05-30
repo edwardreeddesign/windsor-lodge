@@ -72,6 +72,15 @@ export const photoIn = {
   },
 };
 
+export const photoFadeIn = {
+  hidden: { opacity: 0, scale: 0.1 },
+  show: {
+    opacity: 1,
+    scale: 1,
+    transition: { duration: 0.85, type: "spring" },
+  },
+};
+
 export const titleReveal = {
   hidden: {
     y: "4rem",

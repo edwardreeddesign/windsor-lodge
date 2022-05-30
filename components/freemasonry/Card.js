@@ -2,16 +2,22 @@ import Image from "next/image";
 import styled from "styled-components";
 import { H3, P } from "../../elements";
 import { motion } from "framer-motion";
+import {
+  titleReveal,
+  textFadeIn,
+  photoFadeIn,
+} from "../../animations/Animations";
 
 const Card = ({ info }) => {
   const { img, title, paragraph } = info;
   return (
-    <Wrapper>
-      <StyledImage>
+    <Wrapper variants={photoFadeIn}>
+      <StyledImage variants={photoFadeIn}>
         <Image src={img} alt={title} layout='fill' objectFit='cover' />
       </StyledImage>
       <Content>
         <H3
+          variants={titleReveal}
           weight='bold'
           color='dark2'
           align='left'
@@ -20,7 +26,7 @@ const Card = ({ info }) => {
         >
           {title}
         </H3>
-        <P margin='0 0 1rem' size='xSmall'>
+        <P variants={textFadeIn} margin='0 0 1rem' size='xSmall'>
           {paragraph}
         </P>
       </Content>
