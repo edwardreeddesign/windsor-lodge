@@ -42,6 +42,7 @@ const HeroWrapper = styled.div`
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  padding: 0;
 
   /* H1:nth-child(2) {
     animation-name: glow;

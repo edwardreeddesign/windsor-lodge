@@ -97,7 +97,6 @@ const Container = styled(motion.div)`
 const Content = styled(motion.div)`
   padding: 1rem;
   border-radius: 0.25rem;
-  flex: 1;
   overflow: hidden;
 `;
 
@@ -105,7 +104,7 @@ const Flex = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
 
   @media ${props => props.theme.breakpoints.tablet} {
     flex-direction: column;

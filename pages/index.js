@@ -1,8 +1,10 @@
 import Head from "next/head";
-import Hero from "../components/home/Hero";
+import styled from "styled-components";
 // animations
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animations/Animations";
+//components
+import Hero from "../components/home/Hero";
 import Banner from "../components/home/Banner";
 import Lodge from "../components/home/Lodge";
 import Meeting from "../components/home/Meeting";
@@ -30,10 +32,22 @@ export default function Home() {
       </Head>
 
       <Hero />
-      <Banner />
-      <Lodge />
-      <Meeting />
-      <Quotes />
+      <PageWrapper>
+        <Banner />
+        <Lodge />
+        <Meeting />
+        <Quotes />
+      </PageWrapper>
     </motion.div>
   );
 }
+
+const PageWrapper = styled(motion.div)`
+  @media ${props => props.theme.breakpoints.tablet} {
+    padding: 0 4rem;
+  }
+
+  @media ${props => props.theme.breakpoints.mobile} {
+    padding: 0;
+  }
+`;

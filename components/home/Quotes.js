@@ -11,7 +11,9 @@ const Quotes = () => {
   return (
     <>
       <Wrapper ref={element} animate={controls} initial='hidden' exit='exit'>
-        <H1>Freemason Quotes</H1>
+        <H1 align='center' margin='2rem 0'>
+          Freemason Quotes
+        </H1>
         <Card />
       </Wrapper>
     </>
@@ -19,9 +21,12 @@ const Quotes = () => {
 };
 
 const Wrapper = styled(motion.div)`
-  /* padding: 3rem 7rem 2rem;
-  margin: 0 0rem 2rem;
-  border-radius: 0.25rem; */
+  margin: 2rem 0;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
 export default Quotes;
