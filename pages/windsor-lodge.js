@@ -7,6 +7,7 @@ import { pageAnimation } from "../animations/Animations";
 import Hero from "../components/windsorLodge/Hero";
 import Special from "../components/windsorLodge/Special";
 import History from "../components/windsorLodge/History";
+import MasonryGrid from "../components/windsorLodge/MasonryGrid";
 
 const windsorlodge = () => {
   return (
@@ -38,6 +39,7 @@ const windsorlodge = () => {
       <PageWrapper>
         <Special />
         <History />
+        <MasonryGrid />
       </PageWrapper>
     </motion.div>
   );
