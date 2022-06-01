@@ -3,11 +3,13 @@ import { H2, P } from "../../elements";
 import { famousAmericans } from "../../data/CardData";
 import AmericanCard from "./AmericanCard";
 import { motion } from "framer-motion";
-import { photoIn } from "../../animations/Animations";
+import { photoIn, scrollReveal, slideLeft } from "../../animations/Animations";
+import { useScroll } from "../../helpers/useScroll";
 import React from "react";
 import { FaAngleDown } from "react-icons/fa";
 
 const American = () => {
+  const [element, controls] = useScroll();
   const [maxCards, setMaxCards] = React.useState(3);
   const [americanCards, setAmericanCards] = React.useState(
     famousAmericans.slice(0, maxCards)
@@ -26,13 +28,21 @@ const American = () => {
     setMaxCards(prev => prev + 3);
   };
   return (
-    <Content>
+    <Content
+      transition={{ duration: 0.85 }}
+      variants={scrollReveal}
+      ref={element}
+      animate={controls}
+      initial='hidden'
+      exit='exit'
+    >
       <H2
         color='dark2'
         margin='3rem 0 2rem'
         align='center'
         size='large'
         weight='bold'
+        variants={slideLeft}
       >
         American Freemasons
       </H2>

@@ -3,10 +3,19 @@ import styled from "styled-components";
 import { H2, P } from "../../elements";
 import { famousCanadians } from "../../data/CardData";
 import CanadianCard from "./CanadianCard";
-import { motion } from "framer-motion";
 import { FaAngleDown } from "react-icons/fa";
+//Animations
+import { motion } from "framer-motion";
+import {
+  photoIn,
+  slideLeft,
+  scrollReveal,
+  photoFadeIn,
+} from "../../animations/Animations";
+import { useScroll } from "../../helpers/useScroll";
 
 const Canadian = () => {
+  const [element, controls] = useScroll();
   const [maxCards, setMaxCards] = React.useState(3);
   const [canadianCards, setCanadianCards] = React.useState(
     famousCanadians.slice(0, maxCards)
@@ -23,20 +32,29 @@ const Canadian = () => {
       return (className = "disabled");
     }
     setMaxCards(prev => prev + 3);
+    photoIn;
   };
 
   return (
-    <Content>
+    <Content
+      transition={{ duration: 0.85 }}
+      variants={scrollReveal}
+      ref={element}
+      animate={controls}
+      initial='hidden'
+      exit='exit'
+    >
       <H2
         color='dark2'
         margin='3rem 0 2rem'
         align='center'
         size='large'
         weight='bold'
+        variants={slideLeft}
       >
         Canadian Freemasons
       </H2>
-      <P margin='0 0 2rem 0' color='dark2'>
+      <P variants={photoIn} margin='0 0 2rem 0' color='dark2'>
         Freemasonry in Canada traces its origins to the United Grand Lodge of
         England, the Grand Lodge of Scotland and the Grand Lodge of Ireland, as
         a result of Canada&apos;s history as a dominion within the British
@@ -47,9 +65,13 @@ const Canadian = () => {
         Grand Master for Nova Scotia. Philipps founded the first Masonic lodge
         in Canada at Annapolis Royal, Nova Scotia.
       </P>
-      <Flex>
+      <Flex variants={photoIn}>
         {canadianCards.map(canadian => (
-          <CanadianCard key={canadian.id} canadian={canadian} />
+          <CanadianCard
+            variants={photoIn}
+            key={canadian.id}
+            canadian={canadian}
+          />
         ))}
       </Flex>
       <button className='btn' onClick={paginate}>

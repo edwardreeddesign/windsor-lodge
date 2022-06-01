@@ -50,6 +50,14 @@ export const buttonFadeIn = {
     transition: { type: "spring", duration: 1, delay: 2 },
   },
 };
+export const buttonFadeIn2 = {
+  hidden: { opacity: 0, scale: 0.2 },
+  show: {
+    opacity: 1,
+    scale: 1,
+    transition: { type: "spring", duration: 1 },
+  },
+};
 
 export const scrollReveal = {
   hidden: { opacity: 0, scale: 1, y: "5rem" },
@@ -119,4 +127,9 @@ export const textFadeIn = {
     scale: 1,
     transition: { type: "tween" },
   },
+};
+
+export const titleAnimation = {
+  hidden: { y: 200, opacity: 0 },
+  show: { y: 0, opacity: 1, transition: { duration: 0.75, type: "spring" } },
 };
