@@ -8,6 +8,8 @@ import Hero from "../components/windsorLodge/Hero";
 import Special from "../components/windsorLodge/Special";
 import History from "../components/windsorLodge/History";
 import MasonryGrid from "../components/windsorLodge/MasonryGrid";
+import Update from "../components/windsorLodge/Update";
+import Poem from "../components/windsorLodge/Poem";
 
 const windsorlodge = () => {
   return (
@@ -40,6 +42,8 @@ const windsorlodge = () => {
         <Special />
         <History />
         <MasonryGrid />
+        <Update />
+        <Poem />
       </PageWrapper>
     </motion.div>
   );

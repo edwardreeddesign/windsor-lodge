@@ -9,12 +9,12 @@ const Special = () => {
   const [element, controls] = useScroll();
   return (
     <Wrapper
-      transition={{ duration: 0.85 }}
-      variants={scrollReveal}
-      ref={element}
-      animate={controls}
-      initial='hidden'
-      exit='exit'
+    // transition={{ duration: 0.85 }}
+    // variants={scrollReveal}
+    // ref={element}
+    // animate={controls}
+    // initial='hidden'
+    // exit='exit'
     >
       <H3
         font='accent'
