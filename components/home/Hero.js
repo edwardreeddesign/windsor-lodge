@@ -16,6 +16,7 @@ const Hero = () => {
       <H1 variants={titleFade2} margin='0 4rem 1rem 0' color='dark2'>
         From Darkness...
       </H1>
+
       <H1
         variants={titleFade1}
         size='large'

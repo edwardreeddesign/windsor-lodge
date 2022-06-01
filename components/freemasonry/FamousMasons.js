@@ -5,6 +5,7 @@ import Canadian from "./Canadian";
 import { motion } from "framer-motion";
 import { photoIn, slideLeft, scrollReveal } from "../../animations/Animations";
 import { useScroll } from "../../helpers/useScroll";
+import American from "./American";
 
 const FamousMasons = () => {
   const [element, controls] = useScroll();
@@ -40,12 +41,16 @@ const FamousMasons = () => {
           even the existence of the Lodge in question.
         </P>
       </Content>
-      <Canadian />
+      <Content>
+        <Canadian />
+        <American />
+      </Content>
     </>
   );
 };
 
 const Content = styled(motion.div)`
+  overflow: hidden;
   @media ${props => props.theme.breakpoints.mobile} {
     padding: 0 2rem;
   }

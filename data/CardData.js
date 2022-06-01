@@ -22,24 +22,6 @@ export const freemasonryInfo = [
 export const famousCanadians = [
   {
     id: 1,
-    name: "Frederick Arthur Stanley",
-    about:
-      "Governor General of Canada (1888-1893), Namesake for the Stanley Cup.",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/6/63/Lord_Stanley_of_Preston.jpg",
-    delay: 0.2,
-  },
-  {
-    id: 2,
-    name: "John Abbott",
-    about:
-      "Canadian lawyer and politician who served as the third prime minister of Canada from 1891 to 1892. He held office as the leader of the Conservative Party.",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/SirJohnAbbott1.jpg/440px-SirJohnAbbott1.jpg",
-    delay: 0.4,
-  },
-  {
-    id: 3,
     name: "John A. Macdonald",
     about:
       "The first prime minister of Canada. The dominant figure of Canadian Confederation, he had a political career that spanned almost half a century.",
@@ -48,13 +30,31 @@ export const famousCanadians = [
     delay: 0.6,
   },
   {
-    id: 4,
+    id: 2,
     name: "Joey Smallwood",
     about:
       "The main force who brought the Dominion of Newfoundland into the Canadian Confederation in 1949, becoming the first premier of Newfoundland.",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/e/e7/BradleyKingSmallwood1948_%28cropped%29.jpg",
     delay: 0.8,
+  },
+  {
+    id: 3,
+    name: "Frederick Arthur Stanley",
+    about:
+      "Governor General of Canada (1888-1893), Namesake for the Stanley Cup.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/6/63/Lord_Stanley_of_Preston.jpg",
+    delay: 0.2,
+  },
+  {
+    id: 4,
+    name: "John Abbott",
+    about:
+      "Canadian lawyer and politician who served as the third prime minister of Canada from 1891 to 1892. He held office as the leader of the Conservative Party.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/SirJohnAbbott1.jpg/440px-SirJohnAbbott1.jpg",
+    delay: 0.4,
   },
   {
     id: 5,
@@ -94,20 +94,20 @@ export const famousCanadians = [
   },
   {
     id: 9,
+    name: "James Naismith",
+    about: "Inventor of Basketball",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Dr._James_Naismith.jpg/486px-Dr._James_Naismith.jpg",
+    delay: 2,
+  },
+  {
+    id: 10,
     name: "Tim Horton",
     about:
       "Canadian professional ice hockey defenceman who played 24 seasons in the National Hockey League (NHL). Co-founder of Tim Horton's coffee.",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/a/ac/TimHorton_03.jpg",
     delay: 1.8,
-  },
-  {
-    id: 10,
-    name: "James Naismith",
-    about: "Inventor of Basketball",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Dr._James_Naismith.jpg/486px-Dr._James_Naismith.jpg",
-    delay: 2,
   },
 ];
 
