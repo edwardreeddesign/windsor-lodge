@@ -30,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
 
     figcaption {
       font-size: .775rem;
-      color: ${props => props.theme.colors.main3};
+      color: ${props => props.theme.colors.dark2};
     }
 `;
 

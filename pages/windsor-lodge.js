@@ -6,6 +6,7 @@ import { pageAnimation } from "../animations/Animations";
 //components
 import Hero from "../components/windsorLodge/Hero";
 import Special from "../components/windsorLodge/Special";
+import History from "../components/windsorLodge/History";
 
 const windsorlodge = () => {
   return (
@@ -36,6 +37,7 @@ const windsorlodge = () => {
       <Hero />
       <PageWrapper>
         <Special />
+        <History />
       </PageWrapper>
     </motion.div>
   );
