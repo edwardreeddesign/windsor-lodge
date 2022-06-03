@@ -48,6 +48,7 @@ const StyledHero = styled(motion.div)`
   width: 100%;
   height: 75vh;
   position: relative;
+  overflow: hidden;
 `;
 
 const Title = styled(motion.div)`
@@ -62,7 +63,6 @@ const Title = styled(motion.div)`
   z-index: 1;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
-  /* padding: 2rem 0; */
 `;
 
 export default Hero;

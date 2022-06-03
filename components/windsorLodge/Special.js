@@ -87,6 +87,7 @@ const Wrapper = styled(motion.div)`
   margin: 2rem auto;
   background: ${props => props.theme.colors.dark1};
   padding: 1.75rem 0;
+  overflow: hidden;
 `;
 
 export default Special;
