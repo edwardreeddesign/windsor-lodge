@@ -27,6 +27,7 @@ const Wrapper = styled(motion.div)`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 `;
 
 export default Quotes;
