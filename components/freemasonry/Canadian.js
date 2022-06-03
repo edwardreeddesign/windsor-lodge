@@ -99,6 +99,7 @@ const Content = styled(motion.div)`
     border-radius: 0.25rem;
     box-shadow: ${props => props.theme.shadows.shadow1};
     transition: all 350ms ease;
+    color: ${props => props.theme.colors.light1};
 
     &:hover {
       transform: scale(0.95);

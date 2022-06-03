@@ -45,14 +45,14 @@ const HeroWrapper = styled.div`
   overflow: hidden;
   padding: 0;
 
-  H1:nth-child(2) {
+  /* H1:nth-child(2) {
     animation-name: glow;
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-delay: 3s;
     transition: all 350ms ease;
-  }
+  } */
 
   @keyframes glow {
     0% {

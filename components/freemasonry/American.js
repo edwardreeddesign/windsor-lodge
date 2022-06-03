@@ -20,7 +20,6 @@ const American = () => {
   }, [maxCards]);
 
   const lastAmerican = famousAmericans.length - 1 + 1;
-  console.log(famousAmericans);
 
   const paginate = () => {
     setMaxCards(prev => prev + 3);
