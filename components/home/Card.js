@@ -72,7 +72,7 @@ const Card = () => {
             <CardHeader>
               <motion.img
                 src={quotes[quoteIndex].image}
-                alt={quotes[quoteIndex].alt}
+                alt={quotes[quoteIndex].name}
               />
             </CardHeader>
             <CardQuote>
