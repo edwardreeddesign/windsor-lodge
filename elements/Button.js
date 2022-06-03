@@ -31,7 +31,7 @@ const StyledButton = styled(motion.button)`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2rem auto;
+  margin: 2rem 0;
   padding: 1rem 1.8rem;
   transition: all 350ms ease;
   font-size: clamp(0.8rem, 3vw, 1.1rem);

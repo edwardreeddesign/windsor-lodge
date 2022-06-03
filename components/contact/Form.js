@@ -119,13 +119,12 @@ const Form = () => {
             <textarea id='message' name='message' cols='30' rows='10' />
           </FormControl>
           <Buttons>
-            <button type='submit' className='btn' disabled={!formIsValid}>
-              Submit
-            </button>
-
             <Button href='/' outline='true'>
               Home
             </Button>
+            <button type='submit' className='btn' disabled={!formIsValid}>
+              Submit
+            </button>
           </Buttons>
         </form>
       </Section>
@@ -197,7 +196,8 @@ const FormControl = styled.div`
 const Buttons = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  gap: 1rem;
 
   .btn {
     background: ${props => props.theme.colors.main1};
@@ -210,7 +210,7 @@ const Buttons = styled.div`
     letter-spacing: ${props => props.theme.letterSpacing.small};
     text-transform: uppercase;
     font-weight: 500;
-    margin: 2rem;
+    /* margin: 2rem; */
     transition: all 350ms ease-in-out;
 
     &:hover {
