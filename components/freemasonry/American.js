@@ -26,12 +26,12 @@ const American = () => {
   };
   return (
     <Content
-      transition={{ duration: 0.85 }}
-      variants={scrollReveal}
-      ref={element}
-      animate={controls}
-      initial='hidden'
-      exit='exit'
+    // transition={{ duration: 0.85 }}
+    // variants={scrollReveal}
+    // ref={element}
+    // animate={controls}
+    // initial='hidden'
+    // exit='exit'
     >
       <H2
         color='dark1'
