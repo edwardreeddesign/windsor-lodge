@@ -26,11 +26,13 @@ const GlobalStyle = createGlobalStyle`
 
     span {
         font-weight: 700;
+        color: ${({ theme }) => theme.colors.dark4}
     }
 
     figcaption {
       font-size: .775rem;
       color: ${props => props.theme.colors.dark2};
+      margin-bottom: 2rem;
     }
 `;
 

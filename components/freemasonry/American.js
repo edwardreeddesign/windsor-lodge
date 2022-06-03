@@ -19,12 +19,10 @@ const American = () => {
     setAmericanCards(famousAmericans.slice(0, maxCards));
   }, [maxCards]);
 
-  console.log(famousAmericans.slice(0, maxCards));
+  const lastAmerican = famousAmericans.length - 1 + 1;
+  console.log(famousAmericans);
 
   const paginate = () => {
-    if (maxCards.length === 0) {
-      return "disabled";
-    }
     setMaxCards(prev => prev + 3);
   };
   return (
@@ -37,16 +35,16 @@ const American = () => {
       exit='exit'
     >
       <H2
-        color='dark2'
+        color='dark1'
         margin='3rem 0 2rem'
-        align='center'
+        align='left'
         size='large'
         weight='bold'
         variants={slideLeft}
       >
         American Freemasons
       </H2>
-      <P margin='5rem auto' color='dark2'>
+      <P size='small' margin='0 0 2rem 0' color='dark4'>
         The earliest known lodges in North America were located in Pennsylvania,
         where John Moore wrote of attending lodge meetings as early as 1715, two
         years before the first Grand Lodge was formed in London. Indeed, several
@@ -59,7 +57,11 @@ const American = () => {
           <AmericanCard key={americans.id} americans={americans} />
         ))}
       </Flex>
-      <button className='btn' onClick={paginate}>
+      <button
+        disabled={maxCards >= lastAmerican}
+        className='btn'
+        onClick={paginate}
+      >
         Load More <FaAngleDown />
       </button>
     </Content>
@@ -89,7 +91,7 @@ const Content = styled(motion.div)`
       background: ${props => props.theme.colors.light1};
     }
 
-    &.disabled {
+    &:disabled {
       background: grey;
       cursor: not-allowed;
     }

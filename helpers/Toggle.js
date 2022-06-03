@@ -24,7 +24,6 @@ const Line = styled.div`
   background: ${props => props.theme.colors.light2};
   box-shadow: ${props => props.theme.shadows.shadow2};
   height: 0.2rem;
-  margin: 2rem 0;
   width: 100%;
 `;
 

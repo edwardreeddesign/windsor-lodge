@@ -27,11 +27,11 @@ const CanadianCard = ({ canadian }) => {
               layout='responsive'
             />
           </div>
-          <H3 size='small' color='dark3' weight='bold' align='center'>
+          <H3 size='small' color='dark1' weight='bold'>
             {name}
           </H3>
         </div>
-        <P size='xSmall' align='center' margin='0 .75rem'>
+        <P size='xSmall' color='dark2'>
           {about}
         </P>
       </Info>
@@ -42,7 +42,7 @@ const CanadianCard = ({ canadian }) => {
 const CardWrapper = styled(motion.div)`
   display: flex;
   width: 25rem;
-  height: 15rem;
+
   overflow: hidden;
   background: ${props => props.theme.colors.light2};
   border-radius: 0.25rem;
@@ -52,29 +52,33 @@ const CardWrapper = styled(motion.div)`
   &:nth-child(7),
   &:nth-child(10) {
     width: 50%;
-    /* height: rem; */
+
     @media ${props => props.theme.breakpoints.mobile} {
-      height: 17rem;
       width: 20rem;
     }
   }
 
   @media ${props => props.theme.breakpoints.mobile} {
-    height: 17rem;
+    min-height: 30rem;
     width: 20rem;
+    flex-direction: column;
   }
 `;
 
 const ImageWrapper = styled(motion.div)`
-  width: 10rem;
-  height: 14.75rem;
+  width: 100%;
   object-fit: cover;
   object-position: top;
   position: relative;
-  /* flex: 1; */
+  flex: 1;
   overflow: hidden;
   transition: all 350ms ease;
   transform: scale(1.1);
+
+  @media ${props => props.theme.breakpoints.mobile} {
+    height: 40rem;
+    width: 100%;
+  }
 
   &:nth-child(1),
   &:nth-child(4),
@@ -82,30 +86,22 @@ const ImageWrapper = styled(motion.div)`
   &:nth-child(10) {
     height: 20rem;
     @media ${props => props.theme.breakpoints.mobile} {
-      height: 15rem;
-      width: 6rem;
+      height: 20rem;
     }
-  }
-
-  @media ${props => props.theme.breakpoints.mobile} {
-    height: 15rem;
-    width: 6rem;
   }
 `;
 
 const Info = styled(motion.div)`
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-evenly;
   flex: 1;
-  padding: 0.75rem;
+  padding: 0 1.75rem;
   position: relative;
 
   .name {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: flex-start;
     width: 100%;
   }
@@ -113,6 +109,11 @@ const Info = styled(motion.div)`
     position: relative;
     height: 1.25rem;
     width: 2rem;
+  }
+
+  @media ${props => props.theme.breakpoints.mobile} {
+    margin-top: 1rem;
+    padding: 2rem;
   }
 `;
 

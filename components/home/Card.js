@@ -71,12 +71,14 @@ const Card = () => {
           >
             <CardHeader>
               <motion.img src={quotes[quoteIndex].image} />
-              <H2 color='light2' margin='1rem .5rem'>
-                {quotes[quoteIndex].name}
-              </H2>
             </CardHeader>
             <CardQuote>
-              <P>&ldquo;{quotes[quoteIndex].quote}&rdquo;</P>
+              <H2 color='dark1' margin='1rem 0' align='left'>
+                {quotes[quoteIndex].name}
+              </H2>
+              <P size='xSmall' height='small' color='dark2'>
+                &ldquo;{quotes[quoteIndex].quote}&rdquo;
+              </P>
             </CardQuote>
             <Next
               whileHover={{ scale: 1.1 }}
@@ -101,13 +103,12 @@ const Card = () => {
 
 const CardWrapper = styled(motion.div)`
   position: relative;
-  height: 100%;
   width: 40rem;
-  margin: 0 auto;
   display: flex;
+  /* max-height: 15rem; */
   /* flex-direction: column; */
-  align-items: center;
-  justify-content: space-between;
+  /* align-items: center;
+  justify-content: space-between; */
   background: transparent;
   border-radius: 0.25rem;
   overflow: hidden;
@@ -119,32 +120,39 @@ const CardWrapper = styled(motion.div)`
   }
 
   img {
-    height: 15rem;
-    width: 12rem;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    @media ${props => props.theme.breakpoints.mobile} {
+      object-position: center 20%;
+    }
   }
 `;
 
 const CardHeader = styled(motion.div)`
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%;
-
-  background: ${props => props.theme.colors.dark1};
+  flex: 1;
+  /* background: ${props => props.theme.colors.dark1}; */
 
   @media ${props => props.theme.breakpoints.mobile} {
     flex-direction: row;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     width: 100%;
+  }
+
+  img {
+    height: 100%;
   }
 `;
 
 const CardQuote = styled(motion.div)`
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  /* align-items: center; */
   justify-content: center;
-  padding: 0 4rem;
+  padding: 2rem 4rem;
+  flex: 1;
 
   @media ${props => props.theme.breakpoints.tablet} {
     padding: 3rem 4rem;
@@ -156,6 +164,7 @@ const Next = styled(motion.div)`
   top: calc(50% - 20px);
   position: absolute;
   background: ${props => props.theme.colors.main1};
+  color: ${props => props.theme.colors.light2};
   border-radius: 30px;
   width: 40px;
   height: 40px;
@@ -175,6 +184,7 @@ const Prev = styled(motion.div)`
   top: calc(50% - 20px);
   position: absolute;
   background: ${props => props.theme.colors.main1};
+  color: ${props => props.theme.colors.light2};
   border-radius: 30px;
   width: 40px;
   height: 40px;

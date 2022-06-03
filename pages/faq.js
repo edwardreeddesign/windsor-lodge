@@ -32,7 +32,7 @@ const faq = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <PageWrapper>
-        <H1 variants={slideLeft} align='center'>
+        <H1 variants={slideLeft} align='center' weight='bold'>
           Frequently Asked Questions
         </H1>
         <Questions />

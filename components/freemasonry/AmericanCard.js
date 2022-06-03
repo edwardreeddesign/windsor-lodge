@@ -7,6 +7,17 @@ const AmericanCard = ({ americans }) => {
   // const { name, image, about } = americans;
   return (
     <CardWrapper>
+      <div className='header'>
+        <ImageWrapper>
+          <Image
+            src={americans.image}
+            alt={americans.name}
+            layout='fill'
+            objectFit='cover'
+            objectPosition='center 20%'
+          />
+        </ImageWrapper>
+      </div>
       <Info>
         <div className='img'>
           <Image
@@ -17,29 +28,19 @@ const AmericanCard = ({ americans }) => {
             layout='responsive'
           />
         </div>
-        <H3 align='center' margin='-.5rem 0 1.5rem' color='light1'>
+        <H3 align='left' color='light2'>
           {americans.name}
         </H3>
-      </Info>
-      <ImageWrapper>
-        <Image
-          src={americans.image}
-          alt={americans.name}
-          layout='fill'
-          objectFit='cover'
-          objectPosition='center 20%'
-        />
-      </ImageWrapper>
-      <About>
+
         <P
-          color='light2'
+          color='light1'
           size='small'
           margin='1.125rem .5rem'
           textAlign='center'
         >
           {americans.about}
         </P>
-      </About>
+      </Info>
     </CardWrapper>
   );
 };
@@ -49,11 +50,20 @@ const CardWrapper = styled(motion.div)`
   flex-direction: column;
   align-items: center;
   width: 20rem;
-  height: 25rem;
+  height: 28rem;
   background: ${props => props.theme.colors.dark1};
-  padding: 1rem 1.75rem;
   border-radius: 0.5rem;
   box-shadow: ${props => props.theme.shadows.shadow1};
+  overflow: hidden;
+
+  .header {
+    background-color: ${props => props.theme.colors.dark4};
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+  }
 `;
 
 const Info = styled(motion.div)`
@@ -61,6 +71,9 @@ const Info = styled(motion.div)`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 1rem;
+  width: 100%;
+  padding: 1.75rem;
 
   .img {
     position: relative;
@@ -70,8 +83,8 @@ const Info = styled(motion.div)`
 `;
 
 const ImageWrapper = styled(motion.div)`
-  width: 15rem;
-  height: 10rem;
+  min-width: 10rem;
+  min-height: 10rem;
   border-radius: 50%;
   border: 2px solid ${props => props.theme.colors.dark3};
   object-fit: cover;
@@ -86,7 +99,5 @@ const ImageWrapper = styled(motion.div)`
     width: 12rem;
   }
 `;
-
-const About = styled(motion.div)``;
 
 export default AmericanCard;

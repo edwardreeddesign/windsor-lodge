@@ -10,7 +10,7 @@ export const P = styled(motion.p)`
       case "medium":
         return "1.125rem";
       case "small":
-        return "1rem";
+        return "1relm";
       case "xSmall":
         return ".875rem";
       case "xxSmall":
@@ -28,6 +28,8 @@ export const P = styled(motion.p)`
         return "1.275rem";
       case "xSmall":
         return "1.125";
+      case "xxSmall":
+        return "1";
       default:
         return "1.4375rem";
     }
@@ -61,7 +63,7 @@ export const P = styled(motion.p)`
       case "light2":
         return props.theme.colors.light2;
       default:
-        return props.theme.colors.dark1;
+        return props.theme.colors.dark4;
     }
   }};
   text-align: ${props => (props.align ? props.align : "left")};

@@ -14,7 +14,7 @@ const Banner = () => {
       initial='hidden'
       exit='exit'
     >
-      <H2 color='dark1' align='center'>
+      <H2 color='light2' align='center'>
         MAKING GOOD MEN BETTER, FROM TIME IMMEMORIAL
       </H2>
     </StyledBanner>

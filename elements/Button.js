@@ -31,14 +31,14 @@ const StyledButton = styled(motion.button)`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2rem 0;
+  margin: 2rem auto;
   padding: 1rem 1.8rem;
   transition: all 350ms ease;
   font-size: clamp(0.8rem, 3vw, 1.1rem);
   font-family: ${props => props.theme.fonts.accent};
   letter-spacing: ${props => props.theme.letterSpacing.small};
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 800;
   box-shadow: ${props => props.theme.shadows.shadow2};
   border-radius: 0.125rem;
   border: ${props =>
@@ -53,7 +53,7 @@ const StyledButton = styled(motion.button)`
       : ""};
   color: ${props =>
     props.primary
-      ? props.theme.colors.dark1
+      ? props.theme.colors.light2
       : props.secondary
       ? props.theme.colors.light2
       : props.outline

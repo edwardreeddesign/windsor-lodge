@@ -19,7 +19,7 @@ const MasonryGrid = () => {
         columnClassName='my-masonry-grid_column'
       >
         {GridImages.map(image => (
-          <Images key={image.id} image={image} />
+          <Images key={image.alt} image={image} />
         ))}
       </Masonry>
     </GridWrapper>
@@ -28,6 +28,7 @@ const MasonryGrid = () => {
 
 const GridWrapper = styled(motion.div)`
   width: 100%;
+  margin: 4rem 0;
 
   @media ${props => props.theme.breakpoints.mobile} {
     padding: 0 1.5rem;
@@ -47,7 +48,7 @@ const GridWrapper = styled(motion.div)`
 
   /* Style your items */
   .my-masonry-grid_column > div {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   @media (max-width: 760px) {
@@ -59,7 +60,7 @@ const GridWrapper = styled(motion.div)`
       padding-left: 15px; /* gutter size offset */
     }
     .my-masonry-grid_column > div {
-      margin-bottom: 15px; /* space between items */
+      margin-bottom: 10px; /* space between items */
     }
   }
 `;

@@ -35,7 +35,7 @@ const Hero = () => {
           Windsor Lodge 403
         </H1>
         <motion.div variants={buttonFadeIn2}>
-          <Button href='/contact' secondary>
+          <Button href='/contact' primary='true'>
             Contact
           </Button>
         </motion.div>

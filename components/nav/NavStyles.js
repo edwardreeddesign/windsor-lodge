@@ -48,6 +48,10 @@ export const ListItems = styled.ul`
     position: relative;
     display: flex;
     gap: 2rem;
+
+    a {
+      color: ${props => props.theme.colors.light1};
+    }
   }
 
   .active {
@@ -76,7 +80,7 @@ export const MobileList = styled.div`
   bottom: ${({ isOpen }) => (isOpen ? "0" : "100%")};
   width: 100%;
   height: ${({ isOpen }) => (isOpen ? "100vh" : "0")};
-  background: ${props => props.theme.colors.main2};
+  background: ${props => props.theme.colors.dark2};
   /* margin: 4rem; */
   padding: 0 0 8rem;
   margin: 0;
@@ -93,20 +97,20 @@ export const MobileList = styled.div`
   }
 
   a {
-    color: ${props => props.theme.colors.dark2};
+    color: ${props => props.theme.colors.light1};
     letter-spacing: ${props => props.theme.letterSpacing.small};
   }
 
   .active {
     position: relative;
-    color: ${props => props.theme.colors.main3};
+    color: ${props => props.theme.colors.accent1};
     font-weight: bold;
     transition: all 350ms ease;
   }
   .active::after {
     content: "";
     height: 3px;
-    background: ${props => props.theme.colors.light2};
+    background: ${props => props.theme.colors.accent1};
     position: absolute;
     bottom: -12%;
     right: 0%;

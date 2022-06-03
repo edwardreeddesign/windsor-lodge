@@ -2,6 +2,7 @@ import { useForm, ValidationError } from "@formspree/react";
 import useInput from "../../helpers/useInput";
 import styled from "styled-components";
 import { Button } from "../../elements";
+import Map from "./Map";
 
 const isNotEmpty = value => value.trim() !== "";
 const isEmail = value => value.includes("@");
@@ -67,8 +68,8 @@ const Form = () => {
   const phoneInputClasses = phoneInputHasError ? "invalid" : "";
 
   return (
-    <FormContainer>
-      <Section>
+    <Section>
+      <FormContainer>
         <form action='https://formspree.io/f/mnqwwyrv' method='POST'>
           <FormControl className={nameInputClasses}>
             <label htmlFor='name'>Name</label>
@@ -127,25 +128,35 @@ const Form = () => {
             </button>
           </Buttons>
         </form>
-      </Section>
-    </FormContainer>
+      </FormContainer>
+      <Map />
+    </Section>
   );
 };
 
 const FormContainer = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
   gap: 4rem;
+  flex: 1;
+  width: 100%;
 
-  @media ${props => props.theme.breakpoints.tablet} {
-    flex-direction: column;
+  form {
+    width: 100%;
   }
 `;
 
 const Section = styled.div`
-  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
   margin: 0 auto;
+  padding: 5rem 0;
+
+  @media ${props => props.theme.breakpoints.tablet} {
+    flex-direction: column;
+  }
 `;
 
 const FormControl = styled.div`
@@ -157,18 +168,18 @@ const FormControl = styled.div`
     width: 100%;
     padding: 0.8rem;
     margin-bottom: 0.8rem;
-    background: ${props => props.theme.colors.dark3};
+    background: ${props => props.theme.colors.light2};
     transition: all 350ms ease-in-out;
     border-radius: 0.25rem;
+    border: none;
 
     &:focus {
       outline: none;
-      border-color: ${props => props.theme.colors.dark2};
-      background: ${props => props.theme.colors.light1};
     }
   }
 
   label {
+    font-family: ${props => props.theme.fonts.title};
     text-align: left;
     display: block;
     font-size: 0.8rem;
@@ -198,7 +209,11 @@ const Buttons = styled.div`
   align-items: center;
   justify-content: flex-end;
   gap: 1rem;
+  padding: 1.25rem 0 3rem;
 
+  Button {
+    margin: 0;
+  }
   .btn {
     background: ${props => props.theme.colors.main1};
     color: ${props => props.theme.colors.dark1};
@@ -212,6 +227,7 @@ const Buttons = styled.div`
     font-weight: 500;
     /* margin: 2rem; */
     transition: all 350ms ease-in-out;
+    margin: 0;
 
     &:hover {
       background: ${props => props.theme.colors.main2};

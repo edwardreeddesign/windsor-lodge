@@ -32,7 +32,7 @@ const contact = () => {
       </Head>
       <Hero />
       <PageWrapper>
-        <H1 align='center' margin='2rem 0'>
+        <H1 align='center' margin='2rem 0' weight='bold'>
           Contact
         </H1>
         <Form />
@@ -48,7 +48,7 @@ const PageWrapper = styled(motion.div)`
   }
 
   @media ${props => props.theme.breakpoints.mobile} {
-    padding: 0;
+    padding: 1rem;
   }
 `;
 

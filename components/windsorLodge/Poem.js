@@ -17,7 +17,7 @@ const Poem = () => {
       <H3
         font='accent'
         align='center'
-        color='dark1'
+        color='light2'
         margin='0 0 .25rem 0'
         size='small'
       >
@@ -26,7 +26,7 @@ const Poem = () => {
       <H3
         font='accent'
         align='center'
-        color='dark1'
+        color='light2'
         margin='.25rem 0'
         size='small'
       >
@@ -35,7 +35,7 @@ const Poem = () => {
       <H3
         font='accent'
         align='center'
-        color='dark1'
+        color='light2'
         margin='.25rem 0'
         size='small'
       >
@@ -44,7 +44,7 @@ const Poem = () => {
       <H3
         font='accent'
         align='center'
-        color='dark1'
+        color='light2'
         margin='.25rem 0'
         size='small'
       >

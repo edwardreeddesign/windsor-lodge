@@ -13,16 +13,17 @@ import { useScroll } from "../../helpers/useScroll";
 
 const Update = () => {
   const [element, controls] = useScroll();
+  // ref={element} animate={controls} initial='hidden' exit='exit'
 
   return (
-    <Content ref={element} animate={controls} initial='hidden' exit='exit'>
-      <H1 margin='1rem 0' color='Dark1' variants={slideLeft}>
+    <Content>
+      <H1 margin='1rem 0' color='dark1' weight='bold' variants={slideLeft}>
         Windsor Lodge 403
       </H1>
       <H2 color='dark2' margin='1rem 0' variants={titleAnimation}>
         2008 Update
       </H2>
-      <P variants={textFadeIn} margin='.75rem 0' color='Dark2'>
+      <P size='small' variants={textFadeIn} margin='.75rem 0' color='Dark2'>
         The first mention of Windsor Lodge to the general public at large
         appeared in the Amherstburg Echo dated{" "}
         <span>September 21st, 1883.</span> it read as follows:
@@ -40,12 +41,12 @@ const Update = () => {
           Inner Guard.&rdquo;
         </p>
       </SpecialSection>
-      <P variants={textFadeIn} margin='.75rem 0' color='dark2'>
+      <P size='small' variants={textFadeIn} margin='.75rem 0' color='dark2'>
         In <span>September 1983</span> Windsor Lodge celebrated its Hundredth
         Anniversary. It was given permission to embroider Gold Trim on our
         Aprons, signifying 100 years in existence.
       </P>
-      <P variants={textFadeIn} margin='.75rem 0' color='dark2'>
+      <P size='small' variants={textFadeIn} margin='.75rem 0' color='dark2'>
         Approximately twenty years ago Windsor Lodge received a large bequest
         from the estate of longtime member Brother Stewart Douglas Band. This
         bequest changed the course of proceedings for the Lodge. Windsor Lodge
@@ -61,7 +62,7 @@ const Update = () => {
         Malden Park War Memorial
       </H3>
       <TextImageWrapper variants={textFadeIn}>
-        <P margin='.75rem 0' color='dark2'>
+        <P size='small' margin='.75rem 0' color='dark2'>
           In 2000, members of Windsor Lodge spearheaded a Millennium Project
           between the Windsor District, Erie District and the City of Windsor
           creating the Masonic War Memorial in Malden Park.
@@ -74,7 +75,7 @@ const Update = () => {
           />
         </div>
       </TextImageWrapper>
-      <P variants={textFadeIn} margin='.75rem 0' color='dark2'>
+      <P size='small' variants={textFadeIn} margin='.75rem 0' color='dark2'>
         {" "}
         As Windsor Lodge celebrates its{" "}
         <span>One Hundred and Twenty Fifth Anniversary</span>, our early history
@@ -109,7 +110,7 @@ const Update = () => {
       <H3 margin='2rem 0 0 0 ' color='dark1' weight='bold'>
         A Look to the Future
       </H3>
-      <P variants={textFadeIn} margin='.75rem 0' color='dark2'>
+      <P size='small' variants={textFadeIn} margin='.75rem 0' color='dark2'>
         As Windsor Lodge marches towards its One Hundred and Fiftieth
         Anniversary in 2033, the Masonic principals of{" "}
         <span>Brotherly Love, Relief and Truth</span> will continue to guide us
@@ -124,7 +125,7 @@ const Content = styled(motion.div)`
   margin: 2rem auto;
   overflow: hidden;
   background: ${props => props.theme.colors.light2};
-  padding: 0 1.5rem;
+  padding: 2.5rem;
 
   @media ${props => props.theme.breakpoints.mobile} {
     padding: 0 1.5rem;
@@ -132,13 +133,17 @@ const Content = styled(motion.div)`
 `;
 
 const SpecialSection = styled(motion.div)`
-  font-size: clamp(0.775rem, 3vw, 0.875rem);
+  font-size: clamp(0.875rem, 3vw, 0.975rem);
   font-style: italic;
-  width: 75%;
+  /* width: 75%; */
   margin: 1rem auto;
-  text-align: center;
+  text-align: left;
   line-height: 1.175rem;
   color: ${props => props.theme.colors.dark2};
+  background: ${props => props.theme.colors.light1};
+  padding: 1.5rem;
+  border-left: 6px solid ${props => props.theme.colors.main1};
+  border-radius: 0.25rem;
 `;
 
 const TextImageWrapper = styled(motion.div)`
@@ -151,7 +156,8 @@ const TextImageWrapper = styled(motion.div)`
     position: relative;
     height: 12rem;
     max-width: 20rem;
-    box-shadow: ${props => props.theme.shadows.shadow2};
+    border: 12px solid ${props => props.theme.colors.main2};
+    /* box-shadow: ${props => props.theme.shadows.shadow1}; */
     margin-bottom: 1rem;
     border-radius: 0.25rem;
     overflow: hidden;

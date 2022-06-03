@@ -25,14 +25,11 @@ const Canadian = () => {
     setCanadianCards(famousCanadians.slice(0, maxCards));
   }, [maxCards]);
 
-  console.log(famousCanadians.slice(0, maxCards));
+  // gets the last index of the canadians data
+  const lastCanadian = famousCanadians.length - 1 + 1;
 
   const paginate = () => {
-    if (maxCards.length === 0) {
-      return (className = "disabled");
-    }
     setMaxCards(prev => prev + 3);
-    photoIn;
   };
 
   return (
@@ -45,16 +42,16 @@ const Canadian = () => {
       exit='exit'
     >
       <H2
-        color='dark2'
+        color='dark1'
         margin='3rem 0 2rem'
-        align='center'
+        align='left'
         size='large'
         weight='bold'
         variants={slideLeft}
       >
         Canadian Freemasons
       </H2>
-      <P variants={photoIn} margin='0 0 2rem 0' color='dark2'>
+      <P size='small' variants={photoIn} margin='0 0 2rem 0' color='dark1'>
         Freemasonry in Canada traces its origins to the United Grand Lodge of
         England, the Grand Lodge of Scotland and the Grand Lodge of Ireland, as
         a result of Canada&apos;s history as a dominion within the British
@@ -74,7 +71,12 @@ const Canadian = () => {
           />
         ))}
       </Flex>
-      <button className='btn' onClick={paginate}>
+      <button
+        // if the last index === the maxCards from pagination
+        disabled={maxCards >= lastCanadian}
+        className='btn'
+        onClick={paginate}
+      >
         Load More <FaAngleDown />
       </button>
     </Content>
@@ -103,7 +105,7 @@ const Content = styled(motion.div)`
       background: ${props => props.theme.colors.main3};
     }
 
-    &.disabled {
+    &:disabled {
       background: grey;
       cursor: not-allowed;
     }

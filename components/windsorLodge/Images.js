@@ -18,7 +18,7 @@ const Images = ({ image }) => {
 };
 
 const ImageWrapper = styled.div`
-  margin: 2rem auto;
+  /* margin: 2rem auto; */
   box-shadow: ${props => props.theme.shadows.shadow2};
   /* border: 2px solid ${props => props.theme.colors.accent1}; */
   width: 100%;

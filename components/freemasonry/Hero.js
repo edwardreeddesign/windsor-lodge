@@ -30,7 +30,7 @@ const Hero = () => {
         />
       </ImgWrapper>
 
-      <P variants={textFadeIn} margin='2rem 3rem 1rem 3rem'>
+      <P size='small' variants={textFadeIn} margin='2rem 3rem 1rem 3rem'>
         Freemasonry is the leading Fraternal organization in the world. Current
         worldwide membership totals over 3 million members, 1.1 million of whom
         are in North America. The Grand Lodge of Ancient Free and Accepted
@@ -38,7 +38,7 @@ const Hero = () => {
         jurisdiction over 578 masonic lodges located in the province of Ontario
         in Canada with around 46,000 members.
       </P>
-      <P variants={textFadeIn} margin='1rem 3rem'>
+      <P size='small' variants={textFadeIn} margin='1rem 3rem'>
         Freemasonry grew out of medieval stonemasons&apos; guilds, which set
         wages, trained apprentices and regulated who could practice the craft.
       </P>
@@ -50,7 +50,7 @@ const Hero = () => {
       >
         Early Europe
       </H3>
-      <P variants={textFadeIn} margin='1rem 3rem'>
+      <P size='small' variants={textFadeIn} margin='1rem 3rem'>
         In early modern Europe, masons studied measurement, geometry and
         mathematical calculation - as well as bricklaying. Expert masons acted
         as engineers and architects, earning a higher status than most other
@@ -58,7 +58,7 @@ const Hero = () => {
         path from apprentice to master was marked by ritual. Guilds were also
         social organizations whose members met informally to drink in lodges.
       </P>
-      <P variants={textFadeIn} margin='1rem 3rem'>
+      <P size='small' variants={textFadeIn} margin='1rem 3rem'>
         Guilds began accepting non-stonemasons and charging them dues in the
         early 1600s. These would be educated men interested in mathematics and
         antiquity. While working masons would &apos;hew stone and raise
@@ -74,24 +74,24 @@ const Hero = () => {
       >
         Formation of Freemasons
       </H3>
-      <P variants={textFadeIn} margin='1rem 3rem'>
+      <P size='small' variants={textFadeIn} margin='1rem 3rem'>
         Lodges went from operative (working) masons, to symbolic or speculative
         Freemasonry which adopted the rites and trappings of ancient religious
         orders and of chivalric brotherhoods. Lodges are open to all men from
         all walks of life. From the grocery store clerk, construction worker, to
         business owners, doctors, lawyers and politicians... and maybe you.
       </P>
-      <P variants={textFadeIn} margin='1rem 3rem'>
+      <P size='small' variants={textFadeIn} margin='1rem 3rem'>
         Masons come from all walks of life, both blue-collar and white-collar,
         urban, suburban and rural. What unifies Masons is not where we come from
         or what we do for a living, but rather what we aspire to be.
       </P>
-      <P variants={textFadeIn} margin='1rem 3rem'>
+      <P size='small' variants={textFadeIn} margin='1rem 3rem'>
         It is defined by a commitment to universal brotherhood and
         self-improvement.
       </P>
 
-      <P variants={textFadeIn} margin='1rem 3rem'>
+      <P size='small' variants={textFadeIn} margin='1rem 3rem'>
         In early modern Europe, masons studied measurement, geometry and
         mathematical calculation - as well as bricklaying. Expert masons acted
         as engineers and architects, earning a higher status than most other
@@ -107,7 +107,7 @@ const Hero = () => {
       >
         Acceptance of Non-Masons
       </H3>
-      <P variants={textFadeIn} margin='1rem 3rem'>
+      <P size='small' variants={textFadeIn} margin='1rem 3rem'>
         Guilds began accepting non-stonemasons and charging them dues in the
         early 1600s. These would be educated men interested in mathematics and
         antiquity. While working masons would &ldquo;hew stone and raise
@@ -115,7 +115,7 @@ const Hero = () => {
         &ldquo;secrecy, morality and good fellowship&rdquo;. By the end of the
         17th century, stonemason guilds became obsolete and became Freemasons.
       </P>
-      <P variants={textFadeIn} margin='1rem 3rem'>
+      <P size='small' variants={textFadeIn} margin='1rem 3rem'>
         Lodges went from operative (working) masons, to symbolic or speculative
         Freemasonry which adopted the rites and trappings of ancient religious
         orders and of chivalric brotherhoods. Lodges are open to all men from

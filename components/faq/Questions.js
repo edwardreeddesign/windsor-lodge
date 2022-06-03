@@ -39,14 +39,13 @@ const StyledFaq = styled(motion.div)`
   display: block;
   width: 100%;
   max-width: 90%;
-  padding: 5rem 2rem;
+  /* padding: 5rem 2rem; */
   margin: 0 auto;
 
   .answer {
     margin-top: 2rem;
     padding: 1rem;
-    background: ${props => props.theme.colors.main2};
-    box-shadow: ${props => props.theme.shadows.shadow1};
+    background: ${props => props.theme.colors.light2};
     border-radius: 0.25rem;
   }
 `;

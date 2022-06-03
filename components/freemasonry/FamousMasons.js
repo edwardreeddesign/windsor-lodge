@@ -19,15 +19,15 @@ const FamousMasons = () => {
         initial='hidden'
         exit='exit'
       >
-        <H1 variants={slideLeft} margin='2rem 0' color='dark1'>
+        <H1 variants={slideLeft} weight='bold' margin='2rem 0' color='dark1'>
           Famous Freemasons
         </H1>
-        <P variants={photoIn} margin='.5rem 0'>
+        <P size='small' variants={photoIn} margin='.5rem 0'>
           Masons come from all walks of life, both blue-collar and white-collar,
           urban, suburban and rural. What unifies Masons is not where we come
           from or what we do for a living, but rather what we aspire to be.
         </P>
-        <P variants={photoIn} margin='.5rem 0'>
+        <P size='small' variants={photoIn} margin='.5rem 0'>
           Throughout history some members of the fraternity have made no secret
           of their involvement, while others have not made their membership
           public. In some cases, membership can be only proven by searching
@@ -35,7 +35,7 @@ const FamousMasons = () => {
           kept at the individual Lodge level, and may have been lost due to
           fire, flood, deterioration or simple carelessness.{" "}
         </P>
-        <P variants={photoIn} margin='.5rem 0'>
+        <P size='small' variants={photoIn} margin='.5rem 0'>
           Grand Lodge governance may have shifted or reorganized, resulting in
           further loss of records on the member or the name, number, location or
           even the existence of the Lodge in question.

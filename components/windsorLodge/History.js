@@ -18,7 +18,12 @@ const History = () => {
       exit='exit'
     >
       <div>
-        <H1 color='dark2' margin='0 0 2rem 0' variants={slideLeft}>
+        <H1
+          color='dark1'
+          margin='0 0 2rem 0'
+          variants={slideLeft}
+          weight='bold'
+        >
           Where We Started
         </H1>
       </div>
