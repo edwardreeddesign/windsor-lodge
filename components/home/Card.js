@@ -70,7 +70,10 @@ const Card = () => {
             }}
           >
             <CardHeader>
-              <motion.img src={quotes[quoteIndex].image} />
+              <motion.img
+                src={quotes[quoteIndex].image}
+                alt={quotes[quoteIndex].alt}
+              />
             </CardHeader>
             <CardQuote>
               <H2 color='dark1' margin='1rem 0' align='left'>
