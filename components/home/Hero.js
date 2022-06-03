@@ -9,10 +9,12 @@ import {
   titleFade2,
   buttonFadeIn,
 } from "../../animations/Animations";
+import Stars from "./Stars";
 
 const Hero = () => {
   return (
     <HeroWrapper>
+      <Stars />
       <H1 variants={titleFade2} margin='0 4rem 1rem 0' color='dark2'>
         From Darkness...
       </H1>

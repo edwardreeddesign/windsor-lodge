@@ -15,7 +15,7 @@ const Socials = () => {
           <FaFacebook />
         </a>
       </Link>
-      <Link href='/'>
+      <Link href='https://m.facebook.com/groups/944181565592364/'>
         <a>
           <FaInstagram />
         </a>
