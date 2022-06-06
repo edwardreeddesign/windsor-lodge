@@ -50,7 +50,7 @@ export const ListItems = styled.ul`
     gap: 2rem;
 
     a {
-      color: ${props => props.theme.colors.light1};
+      color: ${props => props.theme.colors.dark4};
     }
   }
 
@@ -97,7 +97,7 @@ export const MobileList = styled.div`
   }
 
   a {
-    color: ${props => props.theme.colors.light2};
+    color: ${props => props.theme.colors.dark4};
     letter-spacing: ${props => props.theme.letterSpacing.small};
   }
 
