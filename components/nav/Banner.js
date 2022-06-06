@@ -3,8 +3,8 @@ import { StyledBanner } from "./NavStyles";
 const Banner = () => {
   return (
     <StyledBanner>
-      <p>* Regular Business Meeting *</p>
-      <p>Friday, June 3rd, 2022 - 7:30 p.m.</p>
+      <p>* Night of Comradery *</p>
+      <p>Friday, July 8th, 2022 - 7:00 p.m.</p>
     </StyledBanner>
   );
 };

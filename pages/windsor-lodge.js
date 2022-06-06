@@ -50,6 +50,7 @@ const windsorlodge = () => {
 };
 
 const PageWrapper = styled(motion.div)`
+  overflow: hidden;
   padding: 0 8rem;
   @media ${props => props.theme.breakpoints.tablet} {
     padding: 0 4rem;
