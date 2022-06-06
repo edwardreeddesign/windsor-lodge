@@ -56,7 +56,7 @@ export const ListItems = styled.ul`
 
   .active {
     position: relative;
-    color: ${props => props.theme.colors.accent1};
+    color: ${props => props.theme.colors.dark1};
     font-weight: bold;
     transition: all 350ms ease;
   }
@@ -64,7 +64,7 @@ export const ListItems = styled.ul`
   .active::after {
     content: "";
     height: 3px;
-    background: ${props => props.theme.colors.accent1};
+    background: ${props => props.theme.colors.dark1};
     position: absolute;
     bottom: -20%;
     right: 0%;
@@ -97,20 +97,20 @@ export const MobileList = styled.div`
   }
 
   a {
-    color: ${props => props.theme.colors.light1};
+    color: ${props => props.theme.colors.light2};
     letter-spacing: ${props => props.theme.letterSpacing.small};
   }
 
   .active {
     position: relative;
-    color: ${props => props.theme.colors.accent1};
+    color: ${props => props.theme.colors.dark1};
     font-weight: bold;
     transition: all 350ms ease;
   }
   .active::after {
     content: "";
     height: 3px;
-    background: ${props => props.theme.colors.accent1};
+    background: ${props => props.theme.colors.dark1};
     position: absolute;
     bottom: -12%;
     right: 0%;

@@ -19,14 +19,14 @@ const Card = ({ info }) => {
         <H3
           variants={titleReveal}
           weight='bold'
-          color='dark2'
+          color='dark1'
           align='left'
           margin='.5rem 0 2rem'
           size='large'
         >
           {title}
         </H3>
-        <P variants={textFadeIn} margin='0 0 1rem' size='xSmall'>
+        <P variants={textFadeIn} margin='0 0 1rem' size='xSmall' color='dark2'>
           {paragraph}
         </P>
       </Content>

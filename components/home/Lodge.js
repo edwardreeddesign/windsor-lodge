@@ -32,7 +32,7 @@ const Lodge = () => {
           </H1>
           <H3
             variants={slideLeft}
-            color='dark3'
+            color='dark2'
             margin='0 0 .75rem 0'
             align='center'
           >
@@ -48,7 +48,7 @@ const Lodge = () => {
           </H2>
           <H3
             variants={slideLeft}
-            color='dark3'
+            color='dark2'
             margin='0 0 .75rem 0'
             align='center'
           >

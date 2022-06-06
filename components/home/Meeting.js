@@ -12,7 +12,7 @@ const Meeting = () => {
         variants={textFadeIn}
         align='center'
         letterSpacing='small'
-        color='dark2'
+        color='dark4'
         weight='bold'
       >
         Regular Meeting of Windsor Lodge to be held at the Masonic Temple on the
