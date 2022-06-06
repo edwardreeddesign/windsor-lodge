@@ -19,15 +19,24 @@ const freemasonry = () => {
     >
       <Head>
         <title>Windsor Lodge 403 | Freemasonry</title>
-        <meta name='description' content='Windsor Lodge 403  Freemasonry' />
+        <meta
+          name='description'
+          content='Windsor Lodge 403  Freemasonry masonic lodge masons masonry freemason freemasonry windsor lodge ontario canada grand lodge masonic temple freemasons in ontario contact windsor lodge info information'
+        />
         <meta property='og:title' content='Windsor Lodge 403 Freemasonry' />
+        <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
         <meta
           property='og:description'
-          content='Information about Windsor Lodge 403 and the history of Freemasonry'
+          content='Information about Windsor Lodge 403 and the history of Freemasonry masonic lodge masons masonry freemason freemasonry windsor lodge ontario canada grand lodge masonic temple freemasons in ontario contact windsor lodge info information'
         />
+        <meta property='og:locale' content='en_US' />
         <meta
           property='og:url'
           content='https://windsorlodge403.com/freemasonry'
+        />
+        <meta
+          property='og:title'
+          content='Windsor Lodge No. 403 Masonic Lodge'
         />
         <meta property='og:type' content='website' />
         <link rel='icon' href='/favicon.ico' />

@@ -20,13 +20,23 @@ export default function Home() {
     >
       <Head>
         <title>Windsor Lodge 403 | Home</title>
-        <meta name='description' content='Windsor Lodge 403 home page' />
+        <meta
+          name='description'
+          content='Windsor Lodge 403 masonic lodge masons masonry freemason freemasonry windsor lodge ontario canada grand lodge masonic temple freemasons in ontario contact windsor lodge info information'
+        />
+        <meta name='author' content='Windsor Lodge 403' />
+        <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
         <meta property='og:title' content='Windsor Lodge 403 Home' />
         <meta
           property='og:description'
           content='Information about Windsor Lodge 403 and Freemasonry in Windsor Ontario Meeting dates and times for Windsor Lodge'
         />
+        <meta property='og:locale' content='en_US' />
         <meta property='og:url' content='https://windsorlodge403.com/' />
+        <meta
+          property='og:title'
+          content='Windsor Lodge No. 403 Masonic Lodge'
+        />
         <meta property='og:type' content='website' />
         <link rel='icon' href='/favicon.ico' />
       </Head>

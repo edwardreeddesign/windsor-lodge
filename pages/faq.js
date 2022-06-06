@@ -17,15 +17,22 @@ const faq = () => {
         <title>Windsor Lodge 403 | Faq&apos;s</title>
         <meta
           name='description'
-          content='Windsor Lodge 403 Frequently Asked Questions about Freemasonry and Windsor Lodge 403'
+          content='Windsor Lodge 403 Frequently Asked Questions about Freemasonry and Windsor Lodge 403  masonic lodge masons masonry freemason freemasonry windsor lodge ontario canada grand lodge masonic temple freemasons in ontario contact windsor lodge info information'
         />
+        <meta name='author' content='Windsor Lodge 403' />
+        <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
         <meta
           property='og:title'
           content='Windsor Lodge 403 Frequently Asked Questions'
         />
+        <meta property='og:locale' content='en_US' />
         <meta
           property='og:description'
           content='Information about Windsor Lodge 403 and Frequently Asked Questions about Freemasonry and How to join Freemasonry in Windsor and Windsor Lodge 403 '
+        />
+        <meta
+          property='og:title'
+          content='Windsor Lodge No. 403 Masonic Lodge'
         />
         <meta property='og:url' content='https://windsorlodge403.com/faq' />
         <meta property='og:type' content='website' />

@@ -19,13 +19,20 @@ const contact = () => {
         <title>Windsor Lodge 403 | Contact</title>
         <meta
           name='description'
-          content='Contact form for Windsor Lodge 403 Contact information for Contacting Windsor Lodge 403'
+          content='Contact form for Windsor Lodge 403 Contact information for Contacting Windsor Lodge 403 Windsor Lodge 403 masonic lodge masons masonry freemason freemasonry windsor lodge ontario canada grand lodge masonic temple freemasons in ontario contact windsor lodge info information'
         />
+        <meta name='author' content='Windsor Lodge 403' />
+        <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
         <meta property='og:title' content='Windsor Lodge 403 Contact' />
         <meta
           property='og:description'
           content='How to contact Windsor Lodge 403 map of location of Windsor Lodge send a message to Windsor Lodge 403 '
         />
+        <meta
+          property='og:title'
+          content='Windsor Lodge No. 403 Masonic Lodge'
+        />
+        <meta property='og:locale' content='en_US' />
         <meta property='og:url' content='https://windsorlodge403.com/contact' />
         <meta property='og:type' content='website' />
         <link rel='icon' href='/favicon.ico' />
