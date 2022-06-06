@@ -15,7 +15,8 @@ export const StyledBanner = styled.div`
   align-items: center;
   justify-content: center;
   padding: 0.25rem 0;
-  background: ${props => props.theme.colors.main3};
+  background: ${props => props.theme.colors.main2};
+  color: ${props => props.theme.colors.dark1};
 `;
 
 export const Nav = styled.nav`
@@ -23,7 +24,7 @@ export const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 0;
-  background: ${props => props.theme.colors.main1};
+  background: ${props => props.theme.colors.main3};
 `;
 
 export const Logo = styled.div`
