@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Header = styled.header`
   position: fixed;
@@ -17,6 +17,7 @@ export const StyledBanner = styled.div`
   padding: 0.25rem 0;
   background: ${props => props.theme.colors.main2};
   color: ${props => props.theme.colors.dark1};
+  line-height: ${props => props.theme.lineHeight.small};
 `;
 
 export const Nav = styled.nav`
@@ -63,7 +64,7 @@ export const ListItems = styled.ul`
   }
 
   .active::after {
-    content: "";
+    content: '';
     height: 3px;
     background: ${props => props.theme.colors.dark1};
     position: absolute;
@@ -77,10 +78,10 @@ export const MobileList = styled.div`
   position: fixed;
   top: 6.4rem;
   left: 0;
-  opacity: ${({ isOpen }) => (isOpen ? ".9" : "0")};
-  bottom: ${({ isOpen }) => (isOpen ? "0" : "100%")};
+  opacity: ${({ isOpen }) => (isOpen ? '.9' : '0')};
+  bottom: ${({ isOpen }) => (isOpen ? '0' : '100%')};
   width: 100%;
-  height: ${({ isOpen }) => (isOpen ? "100vh" : "0")};
+  height: ${({ isOpen }) => (isOpen ? '100vh' : '0')};
   background: ${props => props.theme.colors.dark2};
   /* margin: 4rem; */
   padding: 0 0 8rem;
@@ -109,7 +110,7 @@ export const MobileList = styled.div`
     transition: all 350ms ease;
   }
   .active::after {
-    content: "";
+    content: '';
     height: 3px;
     background: ${props => props.theme.colors.dark1};
     position: absolute;
@@ -138,19 +139,19 @@ export const Hamburger = styled.div`
 
   .line1 {
     transform: ${({ isOpen }) =>
-      isOpen ? "rotate(45deg) translate(0, 10px) " : "0"};
+      isOpen ? 'rotate(45deg) translate(0, 10px) ' : '0'};
     background: ${({ isOpen }) =>
-      isOpen ? "${props => props.theme.colors.dark3}" : ""};
+      isOpen ? '${props => props.theme.colors.dark3}' : ''};
   }
 
   .line2 {
-    opacity: ${({ isOpen }) => (isOpen ? "0" : "1")};
+    opacity: ${({ isOpen }) => (isOpen ? '0' : '1')};
   }
 
   .line3 {
     transform: ${({ isOpen }) =>
-      isOpen ? "rotate(-45deg) translate(0, -10px)" : "0"};
+      isOpen ? 'rotate(-45deg) translate(0, -10px)' : '0'};
     color: ${({ isOpen }) =>
-      isOpen ? "${props => props.theme.colors.dark3}" : ""};
+      isOpen ? '${props => props.theme.colors.dark3}' : ''};
   }
 `;
