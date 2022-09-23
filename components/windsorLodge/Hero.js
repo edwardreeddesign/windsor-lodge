@@ -1,41 +1,41 @@
-import Image from "next/image";
-import styled from "styled-components";
-import { H1, Button } from "../../elements";
+import Image from 'next/image';
+import styled from 'styled-components';
+import { H1, Button } from '../../elements';
 //Animations
-import { motion } from "framer-motion";
-import { titleAnimation, buttonFadeIn2 } from "../../animations/Animations";
+import { motion } from 'framer-motion';
+import { titleAnimation, buttonFadeIn2 } from '../../animations/Animations';
 
 const Hero = () => {
   return (
     <StyledHero>
       <Image
-        src='/images/lodge/WindsorLodgeInside.jpeg'
-        alt='Inside Windsor Lodge Blue Room'
-        objectFit='cover'
-        layout='fill'
+        src="/images/lodge/WindsorLodgeInside.jpeg"
+        alt="Inside Windsor Lodge Blue Room"
+        objectFit="cover"
+        layout="fill"
       />
       <Title>
         <H1
           variants={titleAnimation}
-          align='center'
-          color='light1'
-          weight='bold'
-          size='large'
+          align="center"
+          color="light1"
+          weight="bold"
+          size="large"
         >
           History of
         </H1>
         <H1
           variants={titleAnimation}
-          align='center'
-          color='light1'
-          weight='bold'
-          size='large'
-          margin='1rem 0 1rem 0'
+          align="center"
+          color="light1"
+          weight="bold"
+          size="large"
+          margin="1rem 0 1rem 0"
         >
           Windsor Lodge 403
         </H1>
         <motion.div variants={buttonFadeIn2}>
-          <Button href='/contact' primary='true'>
+          <Button href="/contact" primary="true">
             Contact
           </Button>
         </motion.div>
@@ -49,6 +49,7 @@ const StyledHero = styled(motion.div)`
   height: 75vh;
   position: relative;
   overflow: hidden;
+  background: ${props => props.theme.colors.dark1};
 `;
 
 const Title = styled(motion.div)`
