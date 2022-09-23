@@ -1,35 +1,35 @@
-import Link from "next/link";
+import Link from 'next/link';
 //styles
-import styled from "styled-components";
-import { H1, Button } from "../../elements";
+import styled from 'styled-components';
+import { H1, Button } from '../../elements';
 //animations
-import { motion, keyframes } from "framer-motion";
+import { motion, keyframes } from 'framer-motion';
 import {
   titleFade1,
   titleFade2,
   buttonFadeIn,
-} from "../../animations/Animations";
-import Stars from "./Stars";
+} from '../../animations/Animations';
+import Stars from './Stars';
 
 const Hero = () => {
   return (
     <HeroWrapper>
       <Stars />
-      <H1 variants={titleFade2} margin='0 4rem 1rem 0' color='dark2'>
+      <H1 variants={titleFade2} margin="0 4rem 1rem 0" color="dark2">
         From Darkness...
       </H1>
 
       <H1
         variants={titleFade1}
-        size='large'
-        margin='1rem 0 2rem 2rem'
-        color='light2'
-        animation='glow'
+        size="large"
+        margin="1rem 0 2rem 2rem"
+        color="light2"
+        animation="glow"
       >
         Comes the Light.
       </H1>
       <motion.div variants={buttonFadeIn}>
-        <Button primary href='/contact'>
+        <Button primary href="/contact">
           Start Your Journey
         </Button>
       </motion.div>
