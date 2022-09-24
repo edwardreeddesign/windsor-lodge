@@ -4,9 +4,9 @@ const Banner = () => {
   return (
     <StyledBanner>
       <p>* Regular Business Meeting *</p>
-      <p>Friday September 9th, 2022</p>
-      <p>* 3rd Degree *</p>
-      <p>Friday September 23rd, 2022</p>
+      <p>Friday, October 14, 2022 – 7:30 p.m.</p>
+      <p>* 1st Degree *</p>
+      <p>Friday, October 21, 2022 – 7:30 p.m.</p>
     </StyledBanner>
   );
 };
