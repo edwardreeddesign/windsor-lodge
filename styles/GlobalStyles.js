@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
 
     body {
         background: ${({ theme }) => theme.colors.light1};
-        padding-top: 10.4rem;
+        padding-top: 7rem;
     }
 
     a {

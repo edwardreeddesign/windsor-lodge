@@ -7,6 +7,7 @@ export const Header = styled.header`
   display: flex;
   flex-direction: column;
   z-index: 100;
+  margin-bottom: 2rem;
 `;
 
 export const StyledBanner = styled.div`
@@ -82,7 +83,7 @@ export const MobileList = styled.div`
   bottom: ${({ isOpen }) => (isOpen ? '0' : '100%')};
   width: 100%;
   height: ${({ isOpen }) => (isOpen ? '100vh' : '0')};
-  background: ${props => props.theme.colors.dark2};
+  background: ${props => props.theme.colors.dark1};
   /* margin: 4rem; */
   padding: 0 0 8rem;
   margin: 0;
@@ -99,20 +100,20 @@ export const MobileList = styled.div`
   }
 
   a {
-    color: ${props => props.theme.colors.dark4};
+    color: ${props => props.theme.colors.light1};
     letter-spacing: ${props => props.theme.letterSpacing.small};
   }
 
   .active {
     position: relative;
-    color: ${props => props.theme.colors.dark1};
+    color: ${props => props.theme.colors.light1};
     font-weight: bold;
     transition: all 350ms ease;
   }
   .active::after {
     content: '';
     height: 3px;
-    background: ${props => props.theme.colors.dark1};
+    background: ${props => props.theme.colors.accent2};
     position: absolute;
     bottom: -12%;
     right: 0%;
@@ -132,7 +133,7 @@ export const Hamburger = styled.div`
     justify-content: space-between;
     width: 1.7rem;
     height: 3px;
-    background: ${props => props.theme.colors.light1};
+    background: ${props => props.theme.colors.dark1};
     margin-bottom: 0.3rem;
     transition: all 350ms ease-in-out;
   }
