@@ -1,44 +1,45 @@
-import Head from "next/head";
-import styled from "styled-components";
+import Head from 'next/head';
+import styled from 'styled-components';
 // animations
-import { motion } from "framer-motion";
-import { pageAnimation } from "../animations/Animations";
+import { motion } from 'framer-motion';
+import { pageAnimation } from '../animations/Animations';
 //components
-import Hero from "../components/home/Hero";
-import Banner from "../components/home/Banner";
-import Lodge from "../components/home/Lodge";
-import Meeting from "../components/home/Meeting";
-import Quotes from "../components/home/Quotes";
+import Hero from '../components/home/Hero';
+import Banner from '../components/home/Banner';
+import Lodge from '../components/home/Lodge';
+import Meeting from '../components/home/Meeting';
+import Quotes from '../components/home/Quotes';
+import Rules from '../components/home/Rules';
 
 export default function Home() {
   return (
     <motion.div
       variants={pageAnimation}
-      initial='hidden'
-      animate='show'
-      exit='exit'
+      initial="hidden"
+      animate="show"
+      exit="exit"
     >
       <Head>
         <title>Windsor Lodge 403 | Home</title>
         <meta
-          name='description'
-          content='Windsor Lodge 403 masonic lodge masons masonry freemason freemasonry windsor lodge ontario canada grand lodge masonic temple freemasons in ontario contact windsor lodge info information'
+          name="description"
+          content="Windsor Lodge 403 masonic lodge masons masonry freemason freemasonry windsor lodge ontario canada grand lodge masonic temple freemasons in ontario contact windsor lodge info information"
         />
-        <meta name='author' content='Windsor Lodge 403' />
-        <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
-        <meta property='og:title' content='Windsor Lodge 403 Home' />
+        <meta name="author" content="Windsor Lodge 403" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta property="og:title" content="Windsor Lodge 403 Home" />
         <meta
-          property='og:description'
-          content='Information about Windsor Lodge 403 and Freemasonry in Windsor Ontario Meeting dates and times for Windsor Lodge'
+          property="og:description"
+          content="Information about Windsor Lodge 403 and Freemasonry in Windsor Ontario Meeting dates and times for Windsor Lodge"
         />
-        <meta property='og:locale' content='en_US' />
-        <meta property='og:url' content='https://windsorlodge403.com/' />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:url" content="https://windsorlodge403.com/" />
         <meta
-          property='og:title'
-          content='Windsor Lodge No. 403 Masonic Lodge'
+          property="og:title"
+          content="Windsor Lodge No. 403 Masonic Lodge"
         />
-        <meta property='og:type' content='website' />
-        <link rel='icon' href='/favicon.ico' />
+        <meta property="og:type" content="website" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Hero />
@@ -46,6 +47,7 @@ export default function Home() {
         <Banner />
         <Lodge />
         <Meeting />
+        <Rules />
         <Quotes />
       </PageWrapper>
     </motion.div>
