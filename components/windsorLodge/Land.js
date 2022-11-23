@@ -33,8 +33,8 @@ const Land = () => {
       </P>
       <P size="small" variants={photoIn} margin="1rem 0">
         Nous reconnaissons que nous sommes sur terre et entourés d`&apos;eau,
-        habités à l'origine par des peuples autochtones qui ont parcouru cette
-        région depuis des temps immémoriaux. Ce territoire fait partie des
+        habités à l`&apos;origine par des peuples autochtones qui ont parcouru
+        cette région depuis des temps immémoriaux. Ce territoire fait partie des
         terres honorées par les traités Wampum ; accords entre les Anishinaabe,
         Haudenosaunee, Lenni Lenape et leurs alliés Nations Unies à partager
         pacifiquement et à prendre soin des ressources autour des Grands Lacs.
