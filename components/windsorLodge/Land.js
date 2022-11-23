@@ -21,7 +21,7 @@ const Land = () => {
       </H1>
       <P size="small" variants={photoIn} margin="1rem 0">
         We are on land and surrounded by water, originally inhabited by
-        Indigenous Peoples who have travelled this area since time immemorial.
+        Indigenous Peoples who have traveled this area since time immemorial.
         This territory is within the lands honoured by the Wampum Treaties;
         agreements between the Anishinaabe, Haudenosaunee, Lenni Lenape and
         allied Nations to peacefully share and care for the resources around the
@@ -32,17 +32,18 @@ const Land = () => {
         Nations, Inuit, and Métis
       </P>
       <P size="small" variants={photoIn} margin="1rem 0">
-        Nous reconnaissons que nous sommes sur terre et entourés d'eau, habités
-        à l'origine par des peuples autochtones qui ont parcouru cette région
-        depuis des temps immémoriaux. Ce territoire fait partie des terres
-        honorées par les traités Wampum ; accords entre les Anishinaabe,
+        Nous reconnaissons que nous sommes sur terre et entourés d`&apos;eau,
+        habités à l'origine par des peuples autochtones qui ont parcouru cette
+        région depuis des temps immémoriaux. Ce territoire fait partie des
+        terres honorées par les traités Wampum ; accords entre les Anishinaabe,
         Haudenosaunee, Lenni Lenape et leurs alliés Nations Unies à partager
         pacifiquement et à prendre soin des ressources autour des Grands Lacs.
         Plus précisément, nous tenons à souligner la présence de la
         Confédération des Trois Feux (Ojibwe, Odawa, Potawatomi) et des peuples
-        Huron/Wendat. Nous nous engageons à honorer l'histoire et la culture
-        autochtones. tout en restant déterminé à aller de l'avant dans le
-        respect avec toutes les Premières Nations, les Inuits et les Métis.
+        Huron/Wendat. Nous nous engageons à honorer l`&apos;histoire et la
+        culture autochtones. tout en restant déterminé à aller de l`&apos;avant
+        dans le respect avec toutes les Premières Nations, les Inuits et les
+        Métis.
       </P>
     </Content>
   );
