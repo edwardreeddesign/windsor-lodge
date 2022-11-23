@@ -129,7 +129,9 @@ const Content = styled(motion.div)`
   overflow: hidden;
 `;
 
-const Container = styled(motion.div)``;
+const Container = styled(motion.div)`
+  margin-top: 5rem;
+`;
 
 const ImgWrapper = styled(motion.div)`
   display: flex;

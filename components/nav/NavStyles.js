@@ -7,7 +7,6 @@ export const Header = styled.header`
   display: flex;
   flex-direction: column;
   z-index: 100;
-  margin-bottom: 2rem;
 `;
 
 export const StyledBanner = styled.div`
