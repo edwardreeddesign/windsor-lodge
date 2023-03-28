@@ -38,6 +38,10 @@ export default function Home() {
           property="og:title"
           content="Windsor Lodge No. 403 Masonic Lodge"
         />
+        <meta
+          name="google-site-verification"
+          content="ZSGCB8zzpcaz10Nvfi1_sFav9lJ0gMZYO_rUVdJplnI"
+        />
         <meta property="og:type" content="website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

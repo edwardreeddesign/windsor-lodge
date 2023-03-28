@@ -26,6 +26,10 @@ const windsorlodge = () => {
           name="description"
           content="Windsor Lodge 403 About Windsor Lodge page Windsor Lodge 403 masonic lodge masons masonry freemason freemasonry windsor lodge ontario canada grand lodge masonic temple freemasons in ontario contact windsor lodge info information"
         />
+        <meta
+          name="google-site-verification"
+          content="ZSGCB8zzpcaz10Nvfi1_sFav9lJ0gMZYO_rUVdJplnI"
+        />
         <meta name="author" content="Windsor Lodge 403" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta property="og:title" content="Windsor Lodge 403 Windsor Lodge" />
