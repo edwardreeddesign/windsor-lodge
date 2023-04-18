@@ -1,14 +1,14 @@
-import Image from "next/image";
-import styled from "styled-components";
-import { H1, H2, H3, Button } from "../../elements";
-import { motion } from "framer-motion";
+import Image from 'next/image';
+import styled from 'styled-components';
+import { H1, H2, H3, Button } from '../../elements';
+import { motion } from 'framer-motion';
 import {
   photoIn,
   scrollReveal,
   buttonFadeIn,
   slideLeft,
-} from "../../animations/Animations";
-import { useScroll } from "../../helpers/useScroll";
+} from '../../animations/Animations';
+import { useScroll } from '../../helpers/useScroll';
 
 const Lodge = () => {
   const [element, controls] = useScroll();
@@ -17,71 +17,71 @@ const Lodge = () => {
       variants={scrollReveal}
       ref={element}
       animate={controls}
-      initial='hidden'
-      exit='exit'
+      initial="hidden"
+      exit="exit"
     >
       <Flex>
         <Content>
           <H1
             variants={slideLeft}
-            color='dark1'
-            margin='.5rem 0 2rem 0'
-            align='center'
+            color="dark1"
+            margin=".5rem 0 2rem 0"
+            align="center"
           >
             Windsor Lodge No. 403
           </H1>
           <H3
             variants={slideLeft}
-            color='dark2'
-            margin='0 0 .75rem 0'
-            align='center'
+            color="dark2"
+            margin="0 0 .75rem 0"
+            align="center"
           >
             Organized Under Dispensation 1883
           </H3>
           <H2
             variants={slideLeft}
-            color='dark2'
-            margin='0 0 1.5rem 0'
-            align='center'
+            color="dark2"
+            margin="0 0 1.5rem 0"
+            align="center"
           >
             Charter Granted July 9, 1884
           </H2>
           <H3
             variants={slideLeft}
-            color='dark2'
-            margin='0 0 .75rem 0'
-            align='center'
+            color="dark2"
+            margin="0 0 .75rem 0"
+            align="center"
           >
             A.F. & A.M.
           </H3>
           <H2
             variants={slideLeft}
-            color='dark2'
-            margin='0 0 1.5rem 0'
-            align='center'
+            color="dark2"
+            margin="0 0 1.5rem 0"
+            align="center"
           >
             ESSEX COUNTY DISTRICT
           </H2>
           <H2
             variants={slideLeft}
-            color='dark2'
-            align='center'
-            margin='0 0 1.5rem 0'
+            color="dark2"
+            align="center"
+            margin="0 0 1.5rem 0"
           >
             A CORNERSTONE LODGE
           </H2>
           <motion.div variants={buttonFadeIn}>
-            <Button secondary href='/windsor-lodge'>
+            <Button secondary href="/windsor-lodge">
               Learn More
             </Button>
           </motion.div>
         </Content>
         <StyledImage variants={photoIn}>
           <Image
-            src='/images/lodge/MasonicTemple.jpg'
-            alt='Windsor Masonic Temple'
-            layout='fill'
-            objectFit='cover'
+            src="/images/lodge/MasonicTemple.jpg"
+            alt="Exterior of the Windsor Masonic Temple, home of Windsor Lodge No. 403 Freemasons."
+            layout="fill"
+            objectFit="cover"
           />
         </StyledImage>
       </Flex>

@@ -21,13 +21,13 @@ const freemasonry = () => {
         <title>Windsor Lodge 403 | Freemasonry</title>
         <meta
           name="description"
-          content="Windsor Lodge 403  Freemasonry masonic lodge masons masonry freemason freemasonry windsor lodge ontario canada grand lodge masonic temple freemasons in ontario contact windsor lodge info information"
+          content="Windsor Lodge 403, Freemasonry, Masonic Lodge, Masons, Masonry, Freemason, Ontario, Canada, Grand Lodge, Masonic Temple, Freemasons, Contact, Info, and Information"
         />
         <meta property="og:title" content="Windsor Lodge 403 Freemasonry" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta
           property="og:description"
-          content="Information about Windsor Lodge 403 and the history of Freemasonry masonic lodge masons masonry freemason freemasonry windsor lodge ontario canada grand lodge masonic temple freemasons in ontario contact windsor lodge info information"
+          content="Information about Windsor Lodge 403 and the history of Freemasonry, masonic lodge, masons, masonry, freemason, freemasonry, windsor lodge, ontario, canada, grand lodge, masonic temple, freemasons in ontario, contact, windsor lodge 403, info information"
         />
         <meta
           name="google-site-verification"
