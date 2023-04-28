@@ -72,7 +72,7 @@ const Lodge = () => {
           </H2>
           <motion.div variants={buttonFadeIn}>
             <Button secondary href="/windsor-lodge">
-              Learn More
+              Learn More about windsor 403
             </Button>
           </motion.div>
         </Content>
